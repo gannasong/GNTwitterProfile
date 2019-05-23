@@ -10,9 +10,21 @@ import UIKit
 
 class GNViewController: UIViewController {
 
+
+
   override func viewDidLoad() {
     super.viewDidLoad()
     self.view.backgroundColor = .yellow
+  }
+
+}
+
+extension GNViewController: UIScrollViewDelegate {
+
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let offset = scrollView.contentOffset.y
+    var avatarTransform = CATransform3DIdentity
+    var headerTransform = CATransform3DIdentity
   }
 
 }

@@ -11,6 +11,8 @@
 		4923EFB22296EBC400F24458 /* GNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923EFB12296EBC400F24458 /* GNViewController.swift */; };
 		4923EFB72296EBC800F24458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4923EFB62296EBC800F24458 /* Assets.xcassets */; };
 		4923EFBA2296EBC800F24458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4923EFB82296EBC800F24458 /* LaunchScreen.storyboard */; };
+		4923EFC22296F5CE00F24458 /* GNHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923EFC12296F5CE00F24458 /* GNHeaderView.swift */; };
+		4923EFC72296F74500F24458 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4923EFC62296F74500F24458 /* FXBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,10 @@
 		4923EFB62296EBC800F24458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4923EFB92296EBC800F24458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4923EFBB2296EBC800F24458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4923EFC12296F5CE00F24458 /* GNHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNHeaderView.swift; sourceTree = "<group>"; };
+		4923EFC42296F74500F24458 /* GNTwitterProfile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNTwitterProfile-Bridging-Header.h"; sourceTree = "<group>"; };
+		4923EFC52296F74500F24458 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		4923EFC62296F74500F24458 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +58,25 @@
 		4923EFAE2296EBC400F24458 /* GNTwitterProfile */ = {
 			isa = PBXGroup;
 			children = (
+				4923EFC32296F73200F24458 /* Helper */,
 				4923EFAF2296EBC400F24458 /* AppDelegate.swift */,
 				4923EFB12296EBC400F24458 /* GNViewController.swift */,
+				4923EFC12296F5CE00F24458 /* GNHeaderView.swift */,
 				4923EFB62296EBC800F24458 /* Assets.xcassets */,
 				4923EFB82296EBC800F24458 /* LaunchScreen.storyboard */,
 				4923EFBB2296EBC800F24458 /* Info.plist */,
 			);
 			path = GNTwitterProfile;
+			sourceTree = "<group>";
+		};
+		4923EFC32296F73200F24458 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4923EFC52296F74500F24458 /* FXBlurView.h */,
+				4923EFC62296F74500F24458 /* FXBlurView.m */,
+				4923EFC42296F74500F24458 /* GNTwitterProfile-Bridging-Header.h */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +111,7 @@
 				TargetAttributes = {
 					4923EFAB2296EBC400F24458 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -132,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4923EFB22296EBC400F24458 /* GNViewController.swift in Sources */,
+				4923EFC72296F74500F24458 /* FXBlurView.m in Sources */,
 				4923EFB02296EBC400F24458 /* AppDelegate.swift in Sources */,
+				4923EFC22296F5CE00F24458 /* GNHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3V3KSSZTP;
 				INFOPLIST_FILE = GNTwitterProfile/Info.plist;
@@ -279,6 +301,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gannasong.GNTwitterProfile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GNTwitterProfile/Helper/GNTwitterProfile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3V3KSSZTP;
 				INFOPLIST_FILE = GNTwitterProfile/Info.plist;
@@ -297,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gannasong.GNTwitterProfile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GNTwitterProfile/Helper/GNTwitterProfile-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
