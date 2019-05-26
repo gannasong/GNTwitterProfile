@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492274B8229ADDEA009C1491 /* GNNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492274B7229ADDEA009C1491 /* GNNavigationController.swift */; };
 		4923EFB02296EBC400F24458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923EFAF2296EBC400F24458 /* AppDelegate.swift */; };
 		4923EFB22296EBC400F24458 /* GNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923EFB12296EBC400F24458 /* GNViewController.swift */; };
 		4923EFB72296EBC800F24458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4923EFB62296EBC800F24458 /* Assets.xcassets */; };
 		4923EFBA2296EBC800F24458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4923EFB82296EBC800F24458 /* LaunchScreen.storyboard */; };
 		4923EFC22296F5CE00F24458 /* GNHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923EFC12296F5CE00F24458 /* GNHeaderView.swift */; };
 		4923EFC72296F74500F24458 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4923EFC62296F74500F24458 /* FXBlurView.m */; };
+		49F63A072299339C00A86DF6 /* GNScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F63A062299339C00A86DF6 /* GNScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492274B7229ADDEA009C1491 /* GNNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNNavigationController.swift; sourceTree = "<group>"; };
 		4923EFAC2296EBC400F24458 /* GNTwitterProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNTwitterProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4923EFAF2296EBC400F24458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4923EFB12296EBC400F24458 /* GNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		4923EFC42296F74500F24458 /* GNTwitterProfile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNTwitterProfile-Bridging-Header.h"; sourceTree = "<group>"; };
 		4923EFC52296F74500F24458 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		4923EFC62296F74500F24458 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		49F63A062299339C00A86DF6 /* GNScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,10 @@
 		4923EFAE2296EBC400F24458 /* GNTwitterProfile */ = {
 			isa = PBXGroup;
 			children = (
+				4923EFC82297044D00F24458 /* Views */,
 				4923EFC32296F73200F24458 /* Helper */,
 				4923EFAF2296EBC400F24458 /* AppDelegate.swift */,
 				4923EFB12296EBC400F24458 /* GNViewController.swift */,
-				4923EFC12296F5CE00F24458 /* GNHeaderView.swift */,
 				4923EFB62296EBC800F24458 /* Assets.xcassets */,
 				4923EFB82296EBC800F24458 /* LaunchScreen.storyboard */,
 				4923EFBB2296EBC800F24458 /* Info.plist */,
@@ -77,6 +81,16 @@
 				4923EFC42296F74500F24458 /* GNTwitterProfile-Bridging-Header.h */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		4923EFC82297044D00F24458 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4923EFC12296F5CE00F24458 /* GNHeaderView.swift */,
+				49F63A062299339C00A86DF6 /* GNScrollView.swift */,
+				492274B7229ADDEA009C1491 /* GNNavigationController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492274B8229ADDEA009C1491 /* GNNavigationController.swift in Sources */,
 				4923EFB22296EBC400F24458 /* GNViewController.swift in Sources */,
 				4923EFC72296F74500F24458 /* FXBlurView.m in Sources */,
 				4923EFB02296EBC400F24458 /* AppDelegate.swift in Sources */,
+				49F63A072299339C00A86DF6 /* GNScrollView.swift in Sources */,
 				4923EFC22296F5CE00F24458 /* GNHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
